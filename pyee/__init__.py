@@ -31,7 +31,7 @@ class Event_emitter(object):
         """
         Emit `event`, passing *args to each attached function.
         """
-
+        if event not in self._events: return
         # Pass the args to each function in the events dict
         for fxn in self._events[event]:
             fxn(*args, **kwargs)
