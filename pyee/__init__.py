@@ -1,4 +1,4 @@
-class Event_emitter(object):
+class EventEmitter(object):
     def __init__(self):
         """
         Initializes the EE.
